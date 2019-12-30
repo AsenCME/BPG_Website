@@ -1,24 +1,17 @@
-# website
+# Transportr
 
-## Project setup
-```
-npm install
-```
+## Why this name?
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Because the app we are making is related to a form of transportation - the public kind.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Motivation
 
-### Lints and fixes files
-```
-npm run lint
-```
+This concept is part of the Business Plan Basics Course at TUM.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Team
+
+It's me a bunch of other people.
+
+## Conculsion
+
+It is an idea.
