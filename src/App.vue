@@ -1,14 +1,14 @@
 <template>
-  <div id="app">
-    <Navigation />
-    <router-view />
-  </div>
+    <div id="app">
+        <Navigation />
+        <router-view />
+    </div>
 </template>
 
 <script>
 import Navigation from "./components/common/Navigation";
 export default {
-  components: { Navigation }
+    components: { Navigation },
 };
 </script>
 
