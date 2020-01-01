@@ -7,12 +7,13 @@
 }
 
 .section {
+    padding: 0px $frame;
     z-index: 3;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    margin-bottom: $frame;
 
     .illustration {
         z-index: inherit;
@@ -25,17 +26,23 @@
         text-align: left;
         display: flex;
         flex-direction: column;
-        width: 35%;
+        width: 40%;
 
         &.right {
             text-align: right;
             align-items: flex-end;
+            .line {
+                animation-duration: 10s;
+            }
         }
         .line {
             margin-top: 20px;
             width: 200px;
-            height: 5px;
+            height: 3px;
+            border-radius: 5px;
             background-color: $complementary-color;
+
+            animation: tingle alternate infinite 8s ease-in-out;
         }
     }
 
@@ -63,6 +70,22 @@
             height: 25vw;
             transform: rotate(75deg);
             margin-left: 10%;
+            margin-bottom: -5%;
         }
+    }
+}
+
+@keyframes tingle {
+    0% {
+        width: 200px;
+    }
+    30% {
+        width: 250px;
+    }
+    80% {
+        width: 80px;
+    }
+    100% {
+        width: 150px;
     }
 }

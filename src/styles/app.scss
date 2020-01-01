@@ -9,4 +9,5 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: $base-color;
     overflow: hidden;
+    user-select: none !important;
 }

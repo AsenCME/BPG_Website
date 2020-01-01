@@ -14,7 +14,7 @@
 
     .title {
         margin-top: 20vh;
-        padding-left: 45px;
+        padding-left: $frame - 5px;
         border-left: 5px solid $complementary-color;
         margin-bottom: 20px;
 
@@ -25,7 +25,7 @@
     }
 
     .slogan {
-        padding-left: 50px;
+        padding-left: $frame;
         margin-bottom: 50px;
 
         .text {
@@ -35,10 +35,10 @@
     }
 
     .buttons-wrapper {
-        padding-left: 50px;
+        padding-left: $frame;
 
         .button {
-            height: 80px;
+            height: 70px;
             margin-right: 20px;
             cursor: pointer;
         }
@@ -49,7 +49,7 @@
     z-index: 3;
     position: relative;
     width: 40vw;
-    right: 50px;
+    right: $frame;
 }
 
 .square {
