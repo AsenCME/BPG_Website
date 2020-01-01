@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     background-color: $complementary-color;
+    position: relative;
 
     .mockup {
         width: 20%;
@@ -18,16 +19,60 @@
 
     .left,
     .right {
+        display: flex;
+        flex-direction: column;
         .feature-short {
             margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
             .text {
                 font-size: 20px;
             }
             .line {
+                margin-top: 10px;
                 width: 60px;
                 height: 3px;
                 background-color: black;
             }
+        }
+    }
+
+    .left {
+        .feature-short {
+            align-items: flex-end;
+            &.middle {
+                margin-right: 50px;
+            }
+        }
+    }
+    .right {
+        .feature-short {
+            align-items: flex-start;
+            &.middle {
+                margin-left: 50px;
+            }
+        }
+    }
+
+    .square {
+        width: 40vw;
+        height: 40vw;
+        background-color: $secondary-color;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border-radius: 30px;
+        transform: rotate(30deg);
+        margin-top: 10%;
+        margin-right: -20%;
+
+        &.second {
+            background-color: $base-color;
+            margin-right: -25%;
+            margin-top: 10%;
+            width: 35vw;
+            height: 35vw;
+            transform: rotate(45deg);
         }
     }
 }

@@ -13,7 +13,7 @@
           <div class="text">Feature here</div>
           <div class="line"></div>
         </div>
-        <div class="feature-short">
+        <div class="feature-short middle">
           <div class="text">Feature here</div>
           <div class="line"></div>
         </div>
@@ -22,13 +22,15 @@
           <div class="line"></div>
         </div>
       </div>
+
       <img class="mockup" src="../assets/mockup.png" />
+
       <div class="right">
         <div class="feature-short">
           <div class="text">Feature here</div>
           <div class="line"></div>
         </div>
-        <div class="feature-short">
+        <div class="feature-short middle">
           <div class="text">Feature here</div>
           <div class="line"></div>
         </div>
@@ -37,6 +39,9 @@
           <div class="line"></div>
         </div>
       </div>
+
+      <div class="square first"></div>
+      <div class="square second"></div>
     </div>
   </div>
 </template>
