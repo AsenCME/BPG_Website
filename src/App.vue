@@ -3,14 +3,16 @@
     <Navigation />
     <Spacer space="50px" />
     <router-view />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Spacer from "./components/common/Spacer";
 import Navigation from "./components/common/Navigation";
+import Footer from "./components/common/Footer";
 export default {
-  components: { Navigation, Spacer }
+  components: { Navigation, Spacer, Footer }
 };
 </script>
 
