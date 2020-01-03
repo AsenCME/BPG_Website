@@ -3,6 +3,7 @@
     <!-- Heading -->
     <div class="heading">
       <div class="square"></div>
+      <div class="pretext">Features</div>
       <div class="text">
         We've packed a lot into this.
         <br />Take a look at the features available.

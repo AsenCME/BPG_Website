@@ -4,14 +4,14 @@ import VueRouter from "vue-router";
 // Routes
 import Home from "../views/Home.vue";
 import Features from "../views/Features.vue";
-import About from "../views/About.vue";
+import LearnMore from "../views/LearnMore.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
     { path: "/", name: "home", component: Home },
     { path: "/features", name: "features", component: Features },
-    { path: "/about", name: "about", component: About },
+    { path: "/learnmore", name: "learnmore", component: LearnMore },
 ];
 
 const router = new VueRouter({

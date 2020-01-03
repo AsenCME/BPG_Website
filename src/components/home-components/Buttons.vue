@@ -6,8 +6,8 @@
       <div class="line other"></div>
     </div>
     <div class="spacer"></div>
-    <div class="button" @click="goto('/about')">
-      <div class="text">About</div>
+    <div class="button" @click="goto('/learnmore')">
+      <div class="text">Learn More</div>
       <div class="line"></div>
       <div class="line other"></div>
     </div>
