@@ -1,7 +1,38 @@
+@import "./common";
+
 .wrapper {
+    box-sizing: border-box;
     color: white;
-    font-weight: 700;
-    padding: 20px;
+    padding: 50px $frame;
     z-index: 100;
     position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.3s $easer;
+
+        &:hover {
+            color: rgba($color: #fff, $alpha: 0.6);
+        }
+    }
+
+    .menu {
+        display: flex;
+
+        .menu-item {
+            margin: 0px 20px;
+            cursor: pointer;
+            transition: 0.3s $easer;
+
+            &:hover {
+                color: rgba($color: #fff, $alpha: 0.6);
+            }
+        }
+    }
 }

@@ -51,10 +51,6 @@
     &.how {
         background-color: $secondary-color;
 
-        .title .line {
-            @include line-animation(10s);
-        }
-
         .square {
             position: absolute;
             width: 30vw;
@@ -64,7 +60,12 @@
             box-shadow: $shadow-2;
             top: 0px;
             right: 0px;
-            transform: translate(-10%, 10%) rotate(30deg);
+            transform: translate(30%, -10%) rotate(30deg);
+            z-index: 2;
+        }
+
+        .title .line {
+            @include line-animation(10s);
         }
     }
     &.why {
