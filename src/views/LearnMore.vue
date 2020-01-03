@@ -6,7 +6,8 @@
 
     <!-- Section #1 -->
     <div class="section how">
-      <PatternBG text="How How How" repeat="2" />
+      <PatternBG text="How How How" repeat="1" />
+      <div class="square"></div>
       <div class="title">
         <span>How does it all work?</span>
         <div class="line"></div>
@@ -17,19 +18,54 @@
       <div class="cards-wrapper">
         <div class="container-title">Here are some FAQs for you:</div>
         <div class="cards-container">
-          <Card title="Is my data saved?" description="Naturally. We collect data and then run ads tailord to you on our platform. We might even sell some of that data for sweet sweet cash." />
+          <Card
+            title="Is my data saved?"
+            description="Naturally. We collect data and then run ads tailord to you on our platform. We might even sell some of that data for sweet sweet cash."
+          />
           <Card title="How can I rate?" description="You can't and you shouldn't." />
           <Card title="What counts as a trip?" description="LCD, DMT, Herion, Crack Cocaine, etc." />
-          <Card title="How does the app predict delays?" description="By the power of Indian YouTubers who have taught me how to do AI." />
+          <Card
+            title="How does the app predict delays?"
+            description="By the power of Indian YouTubers who have taught me how to do AI."
+          />
         </div>
       </div>
     </div>
 
     <!-- Section #2 -->
     <div class="section why">
-      <div class="title">Why should you rate?</div>
+      <PatternBG text="Rate Rate Rate" repeat="1" />
+      <div class="title">
+        <span>Why should you rate?</span>
+        <div class="line"></div>
+      </div>
       <div class="description">
         <span>I really don't know. Maybe you shouldn't rate if you don't want to. But guess what - the more you rate, the more data we have and next time your train is delayed, you will know, and you will choose an alternative route, maybe even one we have created fot you, who knows. But one thing is for sure, rate so you are not late!</span>
+      </div>
+      <div class="rate-prompt">
+        <Reason
+          v-for="(reason, index) in $store.state.reasons"
+          :key="index"
+          :text="reason.text"
+          :explanation="reason.explanation"
+          :index="index"
+        />
+      </div>
+    </div>
+
+    <!-- Secion #3 -->
+    <div class="survery-results">
+      <div class="headline">
+        <span>
+          After condicting an extensive research and asking over 100 people if they would use the app, we have concluded that coninuing with this project is not advisiable
+          <span
+            class="dot"
+          >.</span>
+        </span>
+      </div>
+      <div class="line"></div>
+      <div class="text">
+        <span>Pretty much everyone hated the public transit but are willing to do nothing about it because they are complacent little bitches.</span>
       </div>
     </div>
   </div>
@@ -39,7 +75,9 @@
 import Heading from "./../components/common/Heading";
 import PatternBG from "./../components/common/PatternBG";
 import Card from "./../components/learn-more-components/Card";
-export default { components: { Heading, PatternBG, Card } };
+import Reason from "./../components/learn-more-components/Reason";
+
+export default { components: { Heading, PatternBG, Card, Reason } };
 </script>
 
 <style lang="scss" scoped>

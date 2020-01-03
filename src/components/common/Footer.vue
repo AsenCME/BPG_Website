@@ -13,5 +13,6 @@
   padding: 40px;
   font-size: 16px;
   text-align: center;
+  z-index: 100;
 }
 </style>

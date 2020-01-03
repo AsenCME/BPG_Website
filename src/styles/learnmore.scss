@@ -17,7 +17,7 @@
 
         .line {
             height: 3px;
-            width: 100px;
+            width: 30%;
             background-color: white;
             margin-top: 10px;
         }
@@ -44,10 +44,69 @@
         }
     }
 
+    .rate-prompt {
+        margin-top: 50px;
+    }
+
     &.how {
         background-color: $secondary-color;
+
+        .title .line {
+            @include line-animation(10s);
+        }
+
+        .square {
+            position: absolute;
+            width: 30vw;
+            height: 30vw;
+            background-color: $base-color-lighter;
+            border-radius: 20px;
+            box-shadow: $shadow-2;
+            top: 0px;
+            right: 0px;
+            transform: translate(-10%, 10%) rotate(30deg);
+        }
     }
     &.why {
         background-color: $base-color;
+        .title .line {
+            @include line-animation(6s);
+        }
+    }
+}
+
+.survery-results {
+    padding: $frame * 2;
+    background-color: $complementary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .headline {
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+        color: black;
+        width: 75%;
+        line-height: 45px;
+
+        .dot {
+            color: $secondary-color;
+            font-size: 45px;
+        }
+    }
+    .line {
+        width: 20%;
+        height: 5px;
+        background-color: black;
+        margin-bottom: 50px;
+    }
+    .text {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 200;
+        width: 50%;
     }
 }
