@@ -1,14 +1,10 @@
 <template>
   <div id="features-page">
     <!-- Heading -->
-    <div class="heading">
-      <div class="square"></div>
-      <div class="pretext">Features</div>
-      <div class="text">
-        We've packed a lot into this.
-        <br />Take a look at the features available.
-      </div>
-    </div>
+    <Heading pretext="Features">
+      We've packed a lot into this.
+      <br />Take a look at the features available.
+    </Heading>
 
     <!-- Features -->
     <div class="features-overview">
@@ -66,9 +62,10 @@
 
 <script>
 import PatternBG from "./../components/common/PatternBG";
+import Heading from "./../components/common/Heading";
 import FeatureDetails from "./../components/features-components/FeatureDetails.vue";
 export default {
-  components: { PatternBG, FeatureDetails }
+  components: { PatternBG, FeatureDetails, Heading }
 };
 </script>
 
