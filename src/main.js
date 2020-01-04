@@ -3,6 +3,14 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faTwitter, faFacebook, faSkype } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+library.add(faEnvelope, faPhone, faTwitter, faFacebook, faSkype);
+Vue.component("fa-icon", FontAwesomeIcon);
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 

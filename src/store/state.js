@@ -53,6 +53,36 @@ const state = {
                 "The more you rate the more likely you are to get checked for a ticket. And declared a Schwarzfahrer and ger fined for 60 Euro. You're welcome!",
         },
     ],
+    teamMembers: [
+        {
+            leader: true,
+            name: "Asen Georgiev",
+            bio: "Lead Leader. Legit Lifter. Amazing Artist.",
+            imageURL: require("../assets/placeholder-image.jpg"),
+        },
+        {
+            name: "Derek Haus",
+            bio: "Massive legend.",
+            imageURL: require("../assets/placeholder-image.jpg"),
+        },
+        {
+            name: "Franz",
+            bio: "I don't know him really well.",
+            imageURL: require("../assets/placeholder-image.jpg"),
+        },
+        {
+            name: "Yulin",
+            bio: "Math wiz.",
+            imageURL: require("../assets/placeholder-image.jpg"),
+        },
+    ],
+    contacts: [
+        { iconType: "fas", iconName: "envelope", label: "Email", info: "niggas@gaymail.com" },
+        { iconType: "fas", iconName: "phone", label: "Phone", info: "006942069420" },
+        { iconType: "fab", iconName: "twitter", label: "Twitter", info: "TweetThisBitch" },
+        { iconType: "fab", iconName: "facebook", label: "Facebook", info: "BoomerBook" },
+        { iconType: "fab", iconName: "skype", label: "Skype", info: "Skype.me.69" },
+    ],
 };
 
 export default state;

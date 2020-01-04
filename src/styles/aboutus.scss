@@ -1,0 +1,89 @@
+@import "./common";
+.headline {
+    width: 100%;
+    box-sizing: border-box;
+    padding: $frame * 2 $frame;
+    position: relative;
+    z-index: 5;
+
+    .title {
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        width: 70%;
+    }
+    .line {
+        height: 5px;
+        background-color: $complementary-color;
+        width: 20%;
+        margin-top: 50px;
+    }
+    .square {
+        z-index: -1;
+        width: 40vw;
+        height: 40vw;
+        border-radius: 20px;
+        box-shadow: $shadow-2;
+        background-color: $secondary-color;
+        position: absolute;
+        top: calc(20%);
+        right: 0px;
+        transform: translate(40%, 0%) rotate(35deg);
+
+        &.other {
+            background-color: $base-color-light;
+            transform: translate(40%, 0%) rotate(45deg) scale(0.8);
+        }
+    }
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $base-color-lighter;
+    padding: $frame;
+
+    .teammate-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: $frame / 2 0px;
+
+        &.leader {
+            width: 100%;
+        }
+    }
+}
+
+.contacts {
+    padding: $frame;
+
+    .title {
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-transform: uppercase;
+
+        .line {
+            width: 10%;
+            height: 5px;
+            background-color: white;
+            margin-top: 20px;
+            margin-bottom: $frame;
+        }
+    }
+
+    .contacts-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
