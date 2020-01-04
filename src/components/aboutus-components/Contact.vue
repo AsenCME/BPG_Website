@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <div class="square">
+    <div class="square" :class="{'other': index%2==1}">
       <fa-icon class="icon" :icon="[iconType, iconName]"></fa-icon>
     </div>
     <div class="label">{{ label }}</div>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-export default { props: ["iconType", "iconName", "label", "info"] };
+export default { props: ["iconType", "iconName", "label", "info", "index"] };
 </script>
 
 <style lang="scss" scoped>
@@ -25,18 +25,44 @@ export default { props: ["iconType", "iconName", "label", "info"] };
     width: 8vmax;
     height: 8vmax;
     background-color: $base-color-light;
-    box-shadow: $shadow-2;
     border-radius: 20px;
     transform: rotate(45deg);
     margin-bottom: calc(1vw + 20px);
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    cursor: pointer;
+    box-shadow: $shadow-2;
+    transition: 0.3s $easer;
+
+    &:hover {
+      box-shadow: $shadow-hover;
+      transform: rotate(0deg);
+
+      &.other {
+        transform: rotate(90deg);
+        .icon {
+          transform: rotate(-90deg);
+        }
+      }
+
+      .icon {
+        transform: rotate(0deg);
+      }
+    }
 
     .icon {
+      position: absolute;
       transform: rotate(-45deg);
       color: $complementary-color;
       font-size: 40px;
+      transition: 0.3s $easer;
+    }
+
+    &.other {
+      background-color: $secondary-color;
     }
   }
 

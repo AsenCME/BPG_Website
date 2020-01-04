@@ -17,6 +17,7 @@
         background-color: $complementary-color;
         width: 20%;
         margin-top: 50px;
+        @include line-animation(5s);
     }
     .square {
         z-index: -1;
@@ -38,6 +39,8 @@
 }
 
 .team-container {
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,10 +49,12 @@
     padding: $frame;
 
     .teammate-wrapper {
+        box-sizing: border-box;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: $frame / 2 0px;
+        margin: $frame / 2 20px;
+        width: 30%;
 
         &.leader {
             width: 100%;

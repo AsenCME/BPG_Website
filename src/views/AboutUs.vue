@@ -16,14 +16,16 @@
 
     <!-- Team -->
     <div class="team-container">
-      <div
+      <PatternBG text="Team Team Team" repeat="10" />
+      <Teammate
         class="teammate-wrapper"
-        v-for="member in $store.state.teamMembers"
+        v-for="member in $store.state.team"
         :key="member.name"
-        :class="{ leader: member.leader }"
-      >
-        <Teammate :name="member.name" :bio="member.bio" :imageURL="member.imageURL" />
-      </div>
+        :class="{ 'leader': member.leader }"
+        :name="member.name"
+        :bio="member.bio"
+        :imageURL="member.imageURL"
+      />
     </div>
 
     <!-- Contacts -->
@@ -40,6 +42,7 @@
           :iconName="contact.iconName"
           :label="contact.label"
           :info="contact.info"
+          :index="index"
         />
       </div>
     </div>
@@ -49,7 +52,8 @@
 <script>
 import Teammate from "../components/aboutus-components/Teammate";
 import Contact from "../components/aboutus-components/Contact";
-export default { components: { Teammate, Contact } };
+import PatternBG from "../components/common/PatternBG";
+export default { components: { Teammate, Contact, PatternBG } };
 </script>
 
 <style lang="scss" scoped>

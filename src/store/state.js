@@ -53,7 +53,7 @@ const state = {
                 "The more you rate the more likely you are to get checked for a ticket. And declared a Schwarzfahrer and ger fined for 60 Euro. You're welcome!",
         },
     ],
-    teamMembers: [
+    team: [
         {
             leader: true,
             name: "Asen Georgiev",

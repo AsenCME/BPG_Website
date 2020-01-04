@@ -1,6 +1,8 @@
 <template>
   <div class="reason">
-    <div class="square" :class="{'other': index % 2 == 1}"></div>
+    <div class="square" :class="{'other': index % 2 == 1}">
+      <div class="square inner"></div>
+    </div>
     <div class="text-container">
       <div class="text">{{ text }}</div>
       <div class="explanation">
@@ -23,11 +25,20 @@ export default { props: ["text", "explanation", "index"] };
   margin-bottom: calc(2vw + 20px);
 
   .square {
+    display: flex;
+    align-self: center;
+    justify-content: center;
     width: 5vw;
     height: 5vw;
     background-color: $base-color-light;
     transform: rotate(45deg);
     border-radius: 20px;
+
+    .inner {
+      transform: scale(0.5) rotate(45deg);
+      border-radius: 50%;
+      background-color: $base-color;
+    }
 
     &.other {
       background-color: $secondary-color;
