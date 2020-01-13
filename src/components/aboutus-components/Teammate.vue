@@ -1,7 +1,7 @@
 <template>
   <div class="teammate-wrapper">
     <div class="teammate-container">
-      <img class="image" :src="imageURL" />
+      <progressive-img class="image" :src="imageURL" />
       <div class="text-container">
         <div class="name">{{ name }}</div>
         <div class="bio">{{ bio }}</div>

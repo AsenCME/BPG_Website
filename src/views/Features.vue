@@ -24,7 +24,7 @@
         </div>
       </div>
 
-      <img class="mockup" src="../assets/mockup.png" />
+      <progressive-img :src="require('../assets/mockup.png')" class="mockup" />
 
       <div class="right">
         <div class="feature-short">

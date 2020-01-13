@@ -24,7 +24,7 @@ export default {
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
   padding: $frame / 2;
-  margin: 20px 0px;
+  margin: 20px 10px;
   width: 25%;
   z-index: 3;
   cursor: crosshair;

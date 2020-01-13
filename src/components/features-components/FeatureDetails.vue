@@ -5,7 +5,7 @@
       <div class="name">{{name}}</div>
       <div class="description">{{description}}</div>
     </div>
-    <img class="illustration" :src="illustrationURL" alt="Illustratiion" />
+    <progressive-img class="illustration" :src="illustrationURL" alt="Illustratiion" />
   </div>
 </template>
 
