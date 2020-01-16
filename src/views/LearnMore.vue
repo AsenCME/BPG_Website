@@ -1,7 +1,7 @@
 <template>
   <div id="learn-more-page">
     <Heading pretext="Learn more">
-      <span>Find out how we intend to do deliver on our promises. Or don't. It's up to you really.</span>
+      <span>Find out how we intend to do deliver on our promises.</span>
     </Heading>
 
     <!-- Section #1 -->
@@ -13,20 +13,20 @@
         <div class="line"></div>
       </div>
       <div class="description">
-        <span>It doesn't. At least now it does't because we have not figured out how it would work. Probably some location tracking, some AI, some blockchain, deep-learning and other buzzwords that get you to like what we have done in theory.</span>
+        <span>Using anonymous location tracking with active participation of our users, we expect to streamline our heat mapping system, that will display, in an easy to use user-interface, where the problem areas are, as well as potential areas where one might experience delays, or full trains where one might experience an uncomfortable riding experience. Users will have the chance to help not only themselves, but also their fellow Müncheners by reporting inconsistencies, inconveniences, as well as rating their overall ride. This data will be input into a sort of blockchain where all like data will be analyzed to find patterns. And these patterns will be analyzed by our app to produce alternatives for all riders of MVV./span>
       </div>
       <div class="cards-wrapper">
         <div class="container-title">Here are some FAQs for you:</div>
         <div class="cards-container">
           <Card
             title="Is my data saved?"
-            description="Naturally. We collect data and then run ads tailord to you on our platform. We might even sell some of that data for sweet sweet cash."
+            description="Only data that the user chooses to share will be used. However, any data used will only be used to choose and run ads tailored to you on our platform. Opting out of data sharing will only cause our app to display ads that may or may not be a good fit for the user."
           />
-          <Card title="How can I rate?" description="You can't and you shouldn't." />
+          <Card title="How can I rate?" description="Rating is easier than ever. You will be asked to rate when our app knows that you have finished your journey. If you choose not to rate the trip right away? No problem, you will be notified at a frequency of your choice, or you can select a journey from your journey history at any time and give it a rating. However, it is always better to rate your journey as soon as you can, as it will help us improve our app for your future transportation experiences." />
           <Card title="What counts as a trip?" description="LCD, DMT, Herion, Crack Cocaine, etc." />
           <Card
             title="How does the app predict delays?"
-            description="By the power of Indian YouTubers who have taught me how to do AI."
+            description="Transportr will cull all data and through advanced AI learning techniques will weed out outlying data and analyze patterns in data provided by the transportation department and by information collected from its users."
           />
         </div>
       </div>
@@ -40,7 +40,7 @@
         <div class="line"></div>
       </div>
       <div class="description">
-        <span>I really don't know. Maybe you shouldn't rate if you don't want to. But guess what - the more you rate, the more data we have and next time your train is delayed, you will know, and you will choose an alternative route, maybe even one we have created fot you, who knows. But one thing is for sure, rate so you are not late!</span>
+        <span>Rating only requires a few seconds of your time after each journey. Rating can only help you. By rating you are allowing our app to grow its databases and to improve the information it provides. The app then can give more precise options catered to your needs. The more you rate, the more data we have and next time your train is delayed, you will know, and you can easily choose an alternative route, maybe even one we have created and customized for you. But one thing is for sure, rate so you are not late!</span>
       </div>
       <div class="rate-prompt">
         <Reason
@@ -57,7 +57,7 @@
     <div class="survery-results">
       <div class="headline">
         <span>
-          After condicting an extensive research and asking over 100 people if they would use the app, we have concluded that coninuing with this project is not advisiable
+          After conducting extensive research and asking already over 100-people whether they would use the app or not, we have concluded that continuing with this project is highly advisable. We have found an astounding amount of people who would like to improve their public transpotation in often more ways than one. We have received a lot of helpful input. And we look forward to hearing more of what people have to say.
           <span
             class="dot"
           >.</span>
@@ -65,7 +65,7 @@
       </div>
       <div class="line"></div>
       <div class="text">
-        <span>Pretty much everyone hated the public transit but are willing to do nothing about it because they are complacent little bitches.</span>
+        <span>Since it is no secret that the public transportation in Munich is out-dated, inefficient, and anything but reliable. We feel it is our public duty to end procrastination related with improving the official public transportation system, and start doing what we can as a society. We no longer want to wait endlessly for our government to go through 20-years of paperwork and bureaucracy, to do what they could be doing now. We have the technology, so why wait? Let's make "Our" public transportation system the best it can be. Transportr is our portal into the future.</span>
       </div>
     </div>
   </div>

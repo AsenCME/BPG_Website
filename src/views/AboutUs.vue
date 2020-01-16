@@ -6,7 +6,7 @@
       <div class="square other"></div>
       <div class="title">
         <span>
-          We are a team of four who are somewhat like-minded in our goal to improve public transportation for all. However, we all come from varying backgrounds. We are Asen a bulgarian-wiz of javascript, Derek an American with an east meets west persona, Franz, and Yulin a mathematician with deep interest in making music as well as friends with everyone!
+          We are a team of four who are somewhat like-minded in our goal to improve public transportation for all. However, we all come from varying backgrounds. We are Asen a bulgarian wiz-of-javascript, Derek an American with an east meets west persona, Franz, and Yulin a mathematician with deep interest in making music as well as friends with everyone!
         </span>
       </div>
       <div class="line"></div>
