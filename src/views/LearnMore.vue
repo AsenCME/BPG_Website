@@ -13,7 +13,7 @@
         <div class="line"></div>
       </div>
       <div class="description">
-        <span>Using anonymous location tracking with active participation of our users, we expect to streamline our heat mapping system, that will display, in an easy to use user-interface, where the problem areas are, as well as potential areas where one might experience delays, or full trains where one might experience an uncomfortable riding experience. Users will have the chance to help not only themselves, but also their fellow Müncheners by reporting inconsistencies, inconveniences, as well as rating their overall ride. This data will be input into a sort of blockchain where all like data will be analyzed to find patterns. And these patterns will be analyzed by our app to produce alternatives for all riders of MVV./span>
+        <span>Using anonymous location tracking with active participation of our users, we expect to streamline our heat mapping system, that will display, in an easy to use user-interface, where the problem areas are, as well as potential areas where one might experience delays, or full trains where one might experience an uncomfortable riding experience. Users will have the chance to help not only themselves, but also their fellow Müncheners by reporting inconsistencies, inconveniences, as well as rating their overall ride. This data will be input into a sort of blockchain where all like data will be analyzed to find patterns. And these patterns will be analyzed by our app to produce alternatives for all riders of MVV.</span>
       </div>
       <div class="cards-wrapper">
         <div class="container-title">Here are some FAQs for you:</div>
@@ -22,7 +22,10 @@
             title="Is my data saved?"
             description="Only data that the user chooses to share will be used. However, any data used will only be used to choose and run ads tailored to you on our platform. Opting out of data sharing will only cause our app to display ads that may or may not be a good fit for the user."
           />
-          <Card title="How can I rate?" description="Rating is easier than ever. You will be asked to rate when our app knows that you have finished your journey. If you choose not to rate the trip right away? No problem, you will be notified at a frequency of your choice, or you can select a journey from your journey history at any time and give it a rating. However, it is always better to rate your journey as soon as you can, as it will help us improve our app for your future transportation experiences." />
+          <Card
+            title="How can I rate?"
+            description="Rating is easier than ever. You will be asked to rate when our app knows that you have finished your journey. If you choose not to rate the trip right away? No problem, you will be notified at a frequency of your choice, or you can select a journey from your journey history at any time and give it a rating. However, it is always better to rate your journey as soon as you can, as it will help us improve our app for your future transportation experiences."
+          />
           <Card title="What counts as a trip?" description="LCD, DMT, Herion, Crack Cocaine, etc." />
           <Card
             title="How does the app predict delays?"
@@ -57,7 +60,7 @@
     <div class="survery-results">
       <div class="headline">
         <span>
-          After conducting extensive research and asking already over 100-people whether they would use the app or not, we have concluded that continuing with this project is highly advisable. We have found an astounding amount of people who would like to improve their public transpotation in often more ways than one. We have received a lot of helpful input. And we look forward to hearing more of what people have to say.
+          After conducting extensive research and asking already over 100-people whether they would use the app or not, we have concluded that continuing with this project is highly advisable. We have found an astounding amount of people who would like to improve their public transpotation in often more ways than one. We have received a lot of helpful input. And we look forward to hearing more of what people have to say
           <span
             class="dot"
           >.</span>
